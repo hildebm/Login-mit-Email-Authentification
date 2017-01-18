@@ -1,0 +1,11 @@
+{
+    "name": "hilde/maillogin",
+    "description": "LoginSystem mit Email Verification",
+    "authors": [
+        {
+            "name": "MariaHildebrandt",
+            "email": "hildebrandt.maria@googlemail.com"
+        }
+    ],
+    "require": {}
+}
