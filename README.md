@@ -4,6 +4,7 @@ LoginSystem mit PHP, SQL, Bootstrap. Nutzer kann sich neu Anmelden und muss sein
 Dies geschieht ebenfalls via Mail. 
 
 SQL-Datenank:login.sql
+
 Es fehlt noch eine Eingabevalidierung (mit Javascript/jQuery oder einfach mit Parsley.js)
 
 <p align="center">
