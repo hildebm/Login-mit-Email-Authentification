@@ -1,0 +1,63 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+     background:grey;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	#font-family: 'Comfortaa', cursive;
+	text-align:center;
+}
+input, button{
+	margin-top:10px;
+}
+
+
+/* fixiert den footer am unteren Rand des Fensters */
+#footer {
+    position:fixed;
+    left:0px;
+    text-align: center;
+    font-size:10px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    color:#A9A9A9;
+}
+
+.header{
+	border-bottom:1px solid #eee;
+	padding:10px 0px;
+	width:100%;
+	text-align:center;
+}
+a{
+    color:#65B3FF;
+	text-decoration: none;
+}
+.header a{
+	color:white;
+	text-decoration: none;
+}
+
+/* Hintergründe für Homepage und Login*/
+
+.background {
+    padding: 230px 0 ;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover; 
+}
+.home{
+    padding: 255px 0 ;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.row {
+    margin-top:-90px;
+}
