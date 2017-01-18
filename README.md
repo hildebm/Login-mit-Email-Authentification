@@ -6,6 +6,7 @@ Dies geschieht ebenfalls via Mail.
 SQL-Datenank:login.sql
 
 Es fehlt noch eine Eingabevalidierung (mit Javascript/jQuery oder einfach mit Parsley.js)
+Und Passwort Hashing (momentan mit Md5)
 
 <p align="center">
   <img src="https://s19.postimg.org/vc7ghhter/index.png" width="280"/>
