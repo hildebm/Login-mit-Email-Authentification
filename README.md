@@ -13,8 +13,7 @@ Es fehlt noch eine Eingabevalidierung (mit Javascript/jQuery oder einfach mit Pa
   <img src="https://s19.postimg.org/eutni37s3/home.png" width="280"/>
 </p>
 <p align="center">
-  <img src="https://s19.postimg.org/rie08cc2r/fpasswort.png" width="200"/>
-  <img src="https://s19.postimg.org/w306n9vs3/neu_Anmelden.png" width="200"/>
-  <img src="https://s19.postimg.org/hmcx8p6ar/resetpass.png" width="200"/>
-  <img src="https://s19.postimg.org/id5neh8o3/resetpass2.png" width="200"/>
+  <img src="https://s19.postimg.org/rie08cc2r/fpasswort.png" width="280"/>
+  <img src="https://s19.postimg.org/hmcx8p6ar/resetpass.png" width="280"/>
+  <img src="https://s19.postimg.org/id5neh8o3/resetpass2.png" width="280"/>
 </p>
