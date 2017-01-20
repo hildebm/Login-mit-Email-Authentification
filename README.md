@@ -18,3 +18,8 @@ Und Passwort Hashing (momentan mit Md5)
   <img src="https://s19.postimg.org/hmcx8p6ar/resetpass.png" width="280"/>
   <img src="https://s19.postimg.org/id5neh8o3/resetpass2.png" width="280"/>
 </p>
+
+Update 20.01.17 Eingabevalidierung
+<p align="center">
+  <img src="https://s19.postimg.org/8ux66bp5v/signup_valid.png" width="280"/>
+</p>
