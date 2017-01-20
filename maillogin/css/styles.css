@@ -14,7 +14,10 @@ body{
 input, button{
 	margin-top:10px;
 }
-
+/* abstand wzischen eingabefelder verringern. */
+.form-group{
+	margin-bottom:4px;
+}
 
 /* fixiert den footer am unteren Rand des Fensters */
 #footer {

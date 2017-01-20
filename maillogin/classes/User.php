@@ -121,10 +121,10 @@ class User
 		$mail->Host       = "smtp.gmail.com";      
 		$mail->Port       = 465;             
 		$mail->AddAddress($email);
-		$mail->Username="hildebrandt.maria@gmail.com";  
-		$mail->Password="Durebit8";            
-		$mail->SetFrom('hildebrandt.maria@gmail.com','Login');
-		$mail->AddReplyTo("hildebrandt.maria@gmail.com","Login");
+		$mail->Username="nutzer@gmail.com";  
+		$mail->Password="mailPasswort";            
+		$mail->SetFrom('nutzer@gmail.com','Login');
+		$mail->AddReplyTo("nutzer@gmail.com","Login");
 		$mail->Subject    = $subject;
 		$mail->MsgHTML($message);
 		$mail->Send();

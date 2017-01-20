@@ -16,11 +16,12 @@ if($reg_user->is_logged_in()!="")
 
 if(isset($_POST['btn-signup']))
 {
-	$firstName = trim($_POST['txtfirstname']);
+	$firstName = trim($_POST['txtfirstname']); 
 	$lastName = trim($_POST['txtlastname']);
 	$uname = trim($_POST['txtuname']);
 	$email = trim($_POST['txtemail']);
 	$upass = trim($_POST['txtpass']);
+	$ucpass = trim($_POST['txtcpass']); //wiederholtes passwort. Übereinstimmung wird in valid_signup.js geprüft
 	$code = md5(uniqid(rand()));
 	
 	$stmt = $reg_user->runQuery("SELECT * FROM tbl_users WHERE userEmail=:email_id");
@@ -88,7 +89,8 @@ if(isset($_POST['btn-signup']))
 			
 			<div class= "row"><!--für Login Formular-->
 				<div class="col-md-4 col-md-offset-4">
-					<form method="post">
+					<!-- id register-form für jQuery validation: valid_signup.js -->
+					<form method="post" id="register-form">
 						<?php 
 						//Fehlermeldung:Nutzer-email existiert schon oder Nachricht, dass eine Mail verschickt wurde
 						if(isset($msg))
@@ -107,12 +109,29 @@ if(isset($_POST['btn-signup']))
 						
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Vorname" name="txtfirstname" required />
-							<input type="text" class="form-control" placeholder="Nachname" name="txtlastname" required />
-							<input type="text" class="form-control" placeholder="Nutzername" name="txtuname" required />
-							<input type="email" class="form-control" placeholder="Email-Addresse" name="txtemail" required />
-							<input type="password" class="form-control" placeholder="Passwort" name="txtpass" required />
-							<button class="btn btn-block btn-primary" type="submit" name="btn-signup">Register</button>
+							<span class="help-block" id="error"></span>  <!-- jQuery validation errors-->
 						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Nachname" name="txtlastname" required />
+							<span class="help-block" id="error"></span>  <!-- jQuery validation errors-->
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Nutzername" name="txtuname" required />
+							<span class="help-block" id="error"></span>  <!-- jQuery validation errors-->
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email-Addresse" name="txtemail" required />
+							<span class="help-block" id="error"></span>  <!-- jQuery validation errors-->
+						</div>
+						<div class="form-group">
+							<input type="password" id="passwort" class="form-control" placeholder="Passwort" name="txtpass" required />
+							<span class="help-block" id="error"></span>  <!-- jQuery validation errors-->
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Passwort wiederholen" name="txtcpass" required />
+							<span class="help-block" id="error"></span>  <!-- jQuery validation errors-->
+						</div>
+							<button class="btn btn-block btn-primary" type="submit" name="btn-signup">Register</button>
 					</form>
 
 				</div><!--Ende von col-4 für Formular-->
