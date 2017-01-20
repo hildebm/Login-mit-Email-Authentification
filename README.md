@@ -2,6 +2,7 @@
 LoginSystem mit PHP, SQL, Bootstrap. Nutzer kann sich neu Anmelden und muss seine Anmeldung via Link 
 (den er über Mail erhält) bestätigen. Der Nutzer kann seit Passwort ändern, wenn er sein Passwort vergessen hat. 
 Dies geschieht ebenfalls via Mail. 
+Eingabevalidierung (bei Neuanmeldung) mit jQuery
 
 SQL-Datenank: login.sql
 
