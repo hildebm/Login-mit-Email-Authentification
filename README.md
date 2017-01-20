@@ -18,7 +18,7 @@ SQL-Datenank: login.sql
   <img src="https://s19.postimg.org/id5neh8o3/resetpass2.png" width="280"/>
 </p>
 
-Update 20.01.17 Eingabevalidierung
+Update 20.01.17 Eingabevalidierung mit Javascript (alternativ auch mich Parsley.js möglich)
 <p align="left">
   <img src="https://s19.postimg.org/8ux66bp5v/signup_valid.png" width="280"/>
 </p>
