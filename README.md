@@ -3,10 +3,9 @@ LoginSystem mit PHP, SQL, Bootstrap. Nutzer kann sich neu Anmelden und muss sein
 (den er über Mail erhält) bestätigen. Der Nutzer kann seit Passwort ändern, wenn er sein Passwort vergessen hat. 
 Dies geschieht ebenfalls via Mail. 
 
-SQL-Datenank:login.sql
+SQL-Datenank: login.sql
 
-Es fehlt noch eine Eingabevalidierung (mit Javascript/jQuery oder einfach mit Parsley.js)
-Und Passwort Hashing (momentan mit Md5)
+
 
 <p align="center">
   <img src="https://s19.postimg.org/vc7ghhter/index.png" width="280"/>
@@ -20,6 +19,8 @@ Und Passwort Hashing (momentan mit Md5)
 </p>
 
 Update 20.01.17 Eingabevalidierung
-<p align="center">
+<p align="left">
   <img src="https://s19.postimg.org/8ux66bp5v/signup_valid.png" width="280"/>
 </p>
+
+Es fehlt noch Passwort Hashing (momentan mit Md5)
