@@ -1,7 +1,15 @@
 # Login-mit-Email-Bestaetigung
-LoginSystem mit PHP, SQL, Bootstrap. Nutzer kann sich neu Anmelden und muss seine Anmeldung via Link 
-(den er über Mail erhält) bestätigen. Der Nutzer kann seit Passwort ändern, wenn er sein Passwort vergessen hat. 
-Dies geschieht ebenfalls via Mail. 
+LoginSystem mit PHP, SQL, Bootstrap. 
+
+Nutzer registriert sich und erhält eine Mail mit Bestätigungs-link
+
+Erst nach der Bestätigung kann der neue Nutzer sich einloggen
+
+
+Der Nutzer kann sein Passwort ändern, wenn er sein Passwort vergessen hat (Nach missglückten Anmeldeversuchen).
+
+Er erhält über Mail einen Link um sein Passwort zu ändern
+
 
 - PHP Mailer und Gmail SMTP (PHPMailer library: https://sourceforge.net/projects/phpmailer/ )
 - Bootstrap Grid und Forms 
