@@ -3,11 +3,11 @@ LoginSystem mit PHP, SQL, Bootstrap. Nutzer kann sich neu Anmelden und muss sein
 (den er über Mail erhält) bestätigen. Der Nutzer kann seit Passwort ändern, wenn er sein Passwort vergessen hat. 
 Dies geschieht ebenfalls via Mail. 
 
-Eingabevalidierung (bei Neuanmeldung) mit jQuery
-
-SQL-Datenank: login.sql
-
-Hintergrundbilder aus : https://github.com/BlackrockDigital/startbootstrap by davidtmiller
+- PHP Mailer und Gmail SMTP (PHPMailer library: https://sourceforge.net/projects/phpmailer/ )
+- Bootstrap Grid und Forms 
+- Eingabevalidierung (bei Neuanmeldung) mit jQuery
+- SQL-Datenank: login.sql
+- Hintergrundbilder aus : https://github.com/BlackrockDigital/startbootstrap by davidtmiller
 
 
 <p align="center">
