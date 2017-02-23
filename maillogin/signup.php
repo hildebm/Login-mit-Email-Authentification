@@ -96,7 +96,6 @@ if(isset($_POST['btn-signup']))
 						if(isset($msg))
 						{?>
                             <div class='alert alert-success'>
-								<button class='close' data-dismiss='alert'>&times;</button>
 								<?php echo $msg; ?>
 							</div>
 						<?php }
