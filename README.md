@@ -13,7 +13,7 @@ Er erhält über Mail einen Link um sein Passwort zu ändern
 
 - PHP Mailer und Gmail SMTP (PHPMailer library: https://sourceforge.net/projects/phpmailer/ )
 - Bootstrap Grid und Forms 
-- Eingabevalidierung (bei Neuanmeldung) mit jQuery
+- Eingabevalidierung (bei Neuanmeldung) mit jQuery 
 - SQL-Datenank: login.sql
 - Hintergrundbilder aus : https://github.com/BlackrockDigital/startbootstrap by davidtmiller
 
@@ -35,3 +35,12 @@ Update 20.01.17 Eingabevalidierung mit Javascript (alternativ auch mich Parsley.
 </p>
 
 Es fehlt noch Passwort Hashing (momentan mit Md5)
+
+Update 23.02.17 Bugs:
+-Veraltete Version von PHP Mailer: Fehlermeldung bei Neuanmeldung des Nutzers "preg_replace(): The /e modifier is no longer supported"
+-Fehlende Betreffzeile in Bestätigungsmail
+
+
+<h2> How to install </h2>
+- download, entpacken, Datenbank: login.sql
+- in User Class PHP Mailer Einstellungen: Email und Passwort eintragen
