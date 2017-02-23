@@ -41,7 +41,7 @@ if(isset($_GET['id']) && isset($_GET['code']))
 				$stmt = $user->runQuery("UPDATE tbl_users SET userPass=:upass WHERE userID=:uid");
 				$stmt->execute(array(":upass"=>$password,":uid"=>$rows['userID']));
 				
-				$msg = "Neues Password gespeichert.";
+				$msg = "Neues Passwort gespeichert.";
 						
 				//nach 5 Sekunden zurück zum Login
 				header("refresh:5;index.php");
