@@ -30,7 +30,7 @@ if(isset($_GET['id']) && isset($_GET['code']))
 			$msg = "
 		           <div class='alert alert-success'>
 				   <button class='close' data-dismiss='alert'>&times;</button>
-					  <strong>WoW !</strong>  Your Account is Now Activated : <a href='index.php'>Login here</a>
+					  <strong>Willkommen!</strong>  Dein Account wurde aktiviert : <a href='index.php'>Weiter zum Login</a>
 			       </div>
 			       ";	
 		}
@@ -39,7 +39,7 @@ if(isset($_GET['id']) && isset($_GET['code']))
 			$msg = "
 		           <div class='alert alert-error'>
 				   <button class='close' data-dismiss='alert'>&times;</button>
-					  <strong>sorry !</strong>  Your Account is allready Activated : <a href='index.php'>Login here</a>
+					  <strong>Fehler!</strong>  Dein Account ist bereits aktiviert : <a href='index.php'>Weiter zum Login</a>
 			       </div>
 			       ";
 		}
@@ -49,7 +49,7 @@ if(isset($_GET['id']) && isset($_GET['code']))
 		$msg = "
 		       <div class='alert alert-error'>
 			   <button class='close' data-dismiss='alert'>&times;</button>
-			   <strong>sorry !</strong>  No Account Found : <a href='signup.php'>Signup here</a>
+			   <strong>sorry !</strong>  Kein Account gefunden : <a href='signup.php'>Hier neu Anmelden</a>
 			   </div>
 			   ";
 	}	
@@ -64,26 +64,23 @@ if(isset($_GET['id']) && isset($_GET['code']))
 	<?php include('view/partials/head.php'); ?>
    
   </head>
-  <body id="login">
- 
-   <div">
+  <body class="background">
 		<div class="container clear-top">
 			<div class= "row">
-			
-				<div class="col-sm-1"></div>
-				<div class="col-sm-10">
-				
-					<div class="page-header">
-						<h2 class="h2" style="text-align:center; color: #A9A9A9;">Verification</h2> 
-					</div>
+					<div class="col-md-4 col-md-offset-4">
 
-<?php if(isset($msg)) { echo $msg; } ?>
-</div>
-				<div class="col-sm-1"></div>
+						<?php
+						if(isset($msg))
+						{?>
+                            <div class='alert alert-success'>
+								<?php echo $msg; ?>
+							</div>
+						<?php }
+						?>
+					</div>
 				
 			</div><!--Ende div row -->
 		</div> <!--Ende div container -->
-	</div> <!--Ende div row -->
 	<footer class="footer"><?php include('view/partials/footer.php'); ?></footer>
    
 	<?php include('view/partials/scripts.php'); ?>
