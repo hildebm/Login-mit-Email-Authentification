@@ -1,5 +1,6 @@
-# Login-mit-Email-Bestaetigung
+# Login-mit-Email-Authentification
 LoginSystem mit PHP, SQL, Bootstrap. 
+Benutzer erhält nach Neuanmeldung eine Email, welche er bestätigen muss um die Anmeldung abzuschließen. Danach kann er sich normal einloggen.
 
 Nutzer registriert sich und erhält eine Mail mit Bestätigungs-link
 
